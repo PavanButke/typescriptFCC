@@ -1,6 +1,6 @@
-function addTwo(num) //any num
+function addTwo(num : number) //type casing 
 {
     return num+2;
 }
 
-addTwo("5"); //adding integer with string 
+addTwo(5); //gives error , needs number only
