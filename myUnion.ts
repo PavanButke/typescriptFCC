@@ -22,11 +22,15 @@ function verifyPasskey(id: number | string)
 {
     if(typeof id==="string")
     {
-        console.log(id , "is string");
+        console.log(id.toUpperCase , "is string");
         
     }
     else{
-        console.log(id ," is number");
+        console.log(id+0 ," is number");
         
     }
 }
+
+//const myArr: number[]|string[]=[1 , 2 , "3"]
+//the above line gives error: Type '(string | number)[]' is not assignable to type 'number[] | string[]'.
+const myArr: (number|string)[]=[1 , 2 , "3"]
