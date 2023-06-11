@@ -8,5 +8,5 @@ const newUser : User=[ 2 , "abc@gmail.com"]
 newUser[1]="def@gmail.com"
 
 //also not allowed as: Argument of type 'boolean' is not assignable to parameter of type 'string | number'.
-newUser.push(true);
+// newUser.push(true);
 export {}   
