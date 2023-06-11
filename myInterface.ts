@@ -5,14 +5,19 @@ interface myProfile{
     salary?: number,
     myAge(): number
 }
+interface AllProfiles{
+    rank: number
+}
 
 //reopenning interface myProfile
-interface myProfile{
-    authToken: string
+interface myProfile extends AllProfiles{
+    authToken: string,
+    rank: number
 }
 const pbProfile={
     name:"Pavan",
     email:"butkepavan55",
+    rank: 34,
     salary:0,
     myAge:()=>
     {
