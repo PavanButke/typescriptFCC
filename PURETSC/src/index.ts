@@ -1,13 +1,13 @@
 class devTeam{
-    empId: number
-    role: string
+    // empId: number
+    // role: string
     private readonly salary: string="3567777USD"
-    constructor(empId: number , role: string)
+    constructor(public empId: number ,public role: string)
     {
-        this.empId= empId;
-        this.role= role;
-        //can access salary inside constructor
-        this.salary="54954895490USD";
+        // this.empId= empId;
+        // this.role= role;
+        // //can access salary inside constructor
+        // this.salary="54954895490USD";    
     }
     
 }
