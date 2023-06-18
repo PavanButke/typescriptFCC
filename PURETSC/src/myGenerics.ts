@@ -26,3 +26,13 @@ const getMoreSearchProducts= <T,>(products: T[]):T =>{
     const myIndx=6
     return products[myIndx]
 } 
+
+function typeExtension<T, U extends number >(value1: T , value2:U):object{
+    return{
+        value1,
+        value2
+    }
+}
+
+typeExtension("hey",2)  // true
+typeExtension("hey","hello")// gives error as U extends to type number
